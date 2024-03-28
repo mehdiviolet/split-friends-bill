@@ -113,13 +113,13 @@ function FormAddFriend({ onSetFriends }) {
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <label>🌇Image url</label>
+      <label>📷Image url</label>
       <input
         type="text"
         value={image}
         onChange={(e) => setImage(e.target.value)}
       />
-      <Button>Add</Button>
+      <Button>Add friend!</Button>
     </form>
   );
 }
