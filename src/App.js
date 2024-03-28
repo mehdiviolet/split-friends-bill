@@ -119,7 +119,7 @@ function FormAddFriend({ onSetFriends }) {
         value={image}
         onChange={(e) => setImage(e.target.value)}
       />
-      <Button>Add friend!</Button>
+      <Button>Add</Button>
     </form>
   );
 }
