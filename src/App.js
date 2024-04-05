@@ -21,6 +21,14 @@ const initialFriends = [
   },
 ];
 
+function Button({ children, onClick }) {
+  return (
+    <button className="button" onClick={onClick}>
+      {children}
+    </button>
+  );
+}
+
 export default function App() {
   const [friends, setFriends] = useState(initialFriends);
   const [isOpen, setIsOpen] = useState(false);
@@ -36,8 +44,8 @@ export default function App() {
   }
 
   function handleSelection(friend) {
+    console.log("d");
     setSelectedFriend(friend);
-    console.log(friend);
   }
 
   return (
@@ -45,20 +53,12 @@ export default function App() {
       <div className="sidebar">
         <FriendsList friends={friends} onSelection={handleSelection} />
         {isOpen && <FormAddFriend onSetFriends={handlerAddFriend} />}
-        <Button onHandlerBtn={handlerBtn}>
+        <Button onClick={handlerBtn}>
           {!isOpen ? "Add friends" : "close"}
         </Button>
       </div>
       {selectedFriend && <FormSlitBill selectedFriend={selectedFriend} />}
     </div>
-  );
-}
-
-function Button({ children, onHandlerBtn }) {
-  return (
-    <button className="button" onClick={onHandlerBtn}>
-      {children}
-    </button>
   );
 }
 
@@ -132,25 +132,25 @@ function FormAddFriend({ onSetFriends }) {
   );
 }
 
-function FormSlitBill() {
+function FormSlitBill({ selectedFriend }) {
   return (
     <form className="form-split-bill">
-      <h2>split a bill with selectedFriend</h2>
+      <h2>split a bill with {selectedFriend.name}</h2>
       <label>💰 Bill value</label>
       <input type="text" />
 
       <label>🕴 Your expense</label>
       <input type="text" />
 
-      <label>👬 X's value</label>
+      <label>👬 {selectedFriend.name}'s value</label>
       <input type="text" disabled />
 
       <label>💲 who is paying the bill?</label>
       <select name="" id="">
         <option value="user">You</option>
-        <option value="friend">...</option>
+        <option value="friend">{selectedFriend.name}</option>
       </select>
-      <Button>Split bill</Button>
+      <Button>Split bil</Button>
     </form>
   );
 }
