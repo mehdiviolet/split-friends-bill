@@ -154,7 +154,6 @@ function FormSlitBill({ selectedFriend }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    // console.log(e);
   }
   return (
     <form className="form-split-bill" onSubmit={handleSubmit}>
