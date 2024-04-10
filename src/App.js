@@ -58,6 +58,7 @@ export default function App() {
           : friend
       )
     );
+    setSelectedFriend(null);
   }
 
   return (
@@ -169,7 +170,7 @@ function FormSlitBill({ selectedFriend, onSplitBill }) {
     e.preventDefault();
     if (!bill || !paidByUser) return;
     console.log(paidByFriend);
-    onSplitBill(whoIsPlaying === "user" ? -paidByFriend : paidByUser);
+    onSplitBill(whoIsPlaying === "user" ? paidByFriend : -paidByUser);
   }
   return (
     <form className="form-split-bill" onSubmit={handleSubmit}>
