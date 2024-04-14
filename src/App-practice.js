@@ -52,7 +52,7 @@ function TextExpander({
     <div className={className}>
       {isExpanded && children}
       {!isExpanded &&
-        children.split(" ").slice(0, collapsedNumWords).join(" ") + "..."}
+        children.split(" ").slice(0, collapsedNumWords).join("") + "..."}
       <button onClick={changeTxt} style={{ color: buttonColor }}>
         {!isExpanded ? expandButtonText : collapseButtonText}
       </button>
