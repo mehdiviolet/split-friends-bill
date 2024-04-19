@@ -188,7 +188,7 @@ function FormSplitBill({ handleSplitBill }) {
         onChange={(e) => setBillValue(Number(e.target.value))}
       />
 
-      <label>🧍‍♀️ Your expense</label>
+      <label>🧍‍♀️Your expense</label>
       <input
         type="text"
         value={yourExp}
@@ -201,7 +201,7 @@ function FormSplitBill({ handleSplitBill }) {
         }
       />
 
-      <label>👫 friend's expense</label>
+      <label>👫friend's expense</label>
       <input type="text" value={friendExp} disabled />
 
       <label>🤑 Who is paying the bill</label>
