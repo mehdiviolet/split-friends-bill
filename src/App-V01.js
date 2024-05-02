@@ -142,7 +142,7 @@ function FormAddFriend({ onSetFriends }) {
   }
   return (
     <form className="form-add-friend" onSubmit={handlerSubmit}>
-      <label>🧞‍♀️Friend name</label>
+      <label>🧞‍♀️ Friend name</label>
       <input
         type="text"
         value={name}
@@ -175,7 +175,7 @@ function FormSlitBill({ selectedFriend, onSplitBill }) {
   return (
     <form className="form-split-bill" onSubmit={handleSubmit}>
       <h2>split a bill with {selectedFriend.name}</h2>
-      <label>💰Bill value</label>
+      <label>💰 Bill value</label>
       <input
         type="text"
         value={bill}
