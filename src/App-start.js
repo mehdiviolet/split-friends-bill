@@ -51,7 +51,7 @@ function FormAddFriend() {
       <label>🌄 Image URL</label>
       <input type="text" />
 
-      <button>clic</button>
+      <button>click</button>
     </form>
   );
 }
