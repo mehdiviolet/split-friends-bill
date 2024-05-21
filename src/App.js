@@ -201,10 +201,10 @@ function FormSplitBill({ handleSplitBill }) {
         }
       />
 
-      <label>👫friend's expense</label>
+      <label>👫 friend's expense</label>
       <input type="text" value={friendExp} disabled />
 
-      <label>🤑Who is paying the bill</label>
+      <label>🤑 Who is paying the bill</label>
       <select>
         <option value="user">You</option>
         <option value="friend">name</option>
