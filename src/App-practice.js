@@ -9,7 +9,7 @@ export default function App() {
         and exploring new worlds. It's the stuff of dreams and science fiction,
         but believe it or not, space travel is a real thing. Humans and robots
         are constantly venturing out into the cosmos to uncover its secrets and
-        push the boundaries of what's possible.
+        push the boundaries of what is possible.
       </TextExpander>
 
       <TextExpander
