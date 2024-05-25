@@ -181,14 +181,14 @@ function FormSplitBill({ handleSplitBill }) {
     <form className="form-split-bill" onSubmit={handleBill}>
       <h2>Split a bill with</h2>
 
-      <label>💰Bill value</label>
+      <label>💰 Bill value</label>
       <input
         type="text"
         value={billValue}
         onChange={(e) => setBillValue(Number(e.target.value))}
       />
 
-      <label>🧍‍♀️Your expense</label>
+      <label>🧍‍♀️ Your expense</label>
       <input
         type="text"
         value={yourExp}
