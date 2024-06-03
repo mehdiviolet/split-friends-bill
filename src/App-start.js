@@ -45,10 +45,10 @@ function Friend() {
 function FormAddFriend() {
   return (
     <form className="form-add-friend">
-      <label>👫Friend name</label>
+      <label>👫 Friend name</label>
       <input type="text" />
 
-      <label>🌄Image URL</label>
+      <label>🌄 Image URL</label>
       <input type="text" />
 
       <button>click</button>
@@ -61,7 +61,7 @@ function FormSplitBill() {
     <form className="form-split-bill">
       <h2>Split a bill with</h2>
 
-      <label>💰Bill value</label>
+      <label>💰 Bill value</label>
       <input type="text" />
 
       <label>🧍‍♀️ Your expense</label>
