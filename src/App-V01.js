@@ -142,7 +142,7 @@ function FormAddFriend({ onSetFriends }) {
   }
   return (
     <form className="form-add-friend" onSubmit={handlerSubmit}>
-      <label>🧞‍♀️Friend name</label>
+      <label>🧞‍♀️ Friend name</label>
       <input
         type="text"
         value={name}
@@ -196,7 +196,7 @@ function FormSlitBill({ selectedFriend, onSplitBill }) {
       <label>👬 {selectedFriend.name}'s value</label>
       <input type="text" disabled value={paidByFriend} />
 
-      <label>💲who is paying the bill?</label>
+      <label>💲 who is paying the bill?</label>
       <select
         name=""
         id=""
