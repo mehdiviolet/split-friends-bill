@@ -193,10 +193,10 @@ function FormSlitBill({ selectedFriend, onSplitBill }) {
         }
       />
 
-      <label>👬{selectedFriend.name}'s value</label>
+      <label>👬 {selectedFriend.name}'s value</label>
       <input type="text" disabled value={paidByFriend} />
 
-      <label>💲who is paying the bill?</label>
+      <label>💲 who is paying the bill?</label>
       <select
         name=""
         id=""
