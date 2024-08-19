@@ -61,10 +61,10 @@ function FormSplitBill() {
     <form className="form-split-bill">
       <h2>Split a bill with</h2>
 
-      <label>💰Bill value</label>
+      <label>💰 Bill value</label>
       <input type="text" />
 
-      <label>🧍Your expense</label>
+      <label>🧍 Your expense</label>
       <input type="text" />
 
       <label>👫friend's expense</label>
